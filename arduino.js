@@ -1,5 +1,9 @@
+// Arduino
 var five = require("johnny-five"),
-    board = new five.Board();
+    board = new five.Board(),
+    // Leap motion
+    webSocket = require('ws'),
+    ws = new webSocket('ws://127.0.0.1:6437');
 
 board.on("ready", function() {
 
@@ -26,16 +30,42 @@ board.on("ready", function() {
     var val = this.value;
     var pinValue;
     if (val < 128) {
-      backward();
+      forward();
       pinValue = (255 - (val * 2));
     } else {
-      forward();
+      backward();
       pinValue = (val - 128) * 2;
     }
 
     console.log(this.value, pinValue);
     board.analogWrite(enablePin, pinValue);
   });
+
+  var handleFrame = function(frame) {
+    if (frame.hands && frame.hands.length > 0) {
+      var hand = frame.hands[0],
+          palmX = hand.palmPosition[0],
+          min = -250,
+          max = 250;
+      if (palmX > min && palmX < max) {
+        var pinValue;
+        if (palmX < 0) {
+          backward();
+          pinValue = -palmX;
+        } else {
+          forward();
+          pinValue = palmX;
+        }
+        console.log(pinValue);
+        board.analogWrite(enablePin, pinValue);
+      }
+    }
+  };
+
+  ws.on('message', function(data, flags) {
+    handleFrame(JSON.parse(data));
+  });
+
 
   // board.loop(1000, function() {
     // if (isforward) {

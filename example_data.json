@@ -1,0 +1,84 @@
+{
+  "currentFrameRate": 57.6366,
+  "gestures": [ ],
+  "hands": [
+    {
+    "direction": [0.0695901, 0.125681, -0.989627],
+    "id": 86,
+    "palmNormal": [-0.409577, -0.900963, -0.143222],
+    "palmPosition": [59.1007, 278.677, 131.937],
+    "palmVelocity": [432.902, -57.0172, 877.715],
+    "r": [
+      [0.995639, 0.0547975, 0.0755021],
+      [-0.0909225, 0.751198, 0.653785],
+      [-0.0208913, -0.657798, 0.752904]
+    ],
+    "s": -1.30973,
+    "sphereCenter": [40.8298, 264.364, 67.3262],
+    "sphereRadius": 60.5574,
+    "stabilizedPalmPosition": [48.4794, 277.75, 112.027],
+    "t": [25.6617, -181.835, -212.253],
+    "timeVisible": 6.17474
+  }
+  ],
+  "id": 14091,
+  "interactionBox": { "center": [0, 200, 0], "size": [221.418, 221.418, 154.742] },
+  "pointables": [
+    {
+    "direction": [-0.0171018, -0.537579, -0.84304],
+    "handId": 86,
+    "id": 21,
+    "length": 65.3304,
+    "stabilizedTipPosition": [50.0853, 272.029, 32.2994],
+    "timeVisible": 0.017324,
+    "tipPosition": [50.0853, 272.029, 32.2994],
+    "tipVelocity": [791.107, 292.701, 724.477],
+    "tool": false,
+    "touchDistance": 0.333333,
+    "touchZone": "hovering"
+  },
+  {
+    "direction": [-0.129988, -0.439987, -0.888546],
+    "handId": 86,
+    "id": 41,
+    "length": 51.4645,
+    "stabilizedTipPosition": [84.506, 274.756, 35.469],
+    "timeVisible": 0.173501,
+    "tipPosition": [84.506, 274.756, 35.469],
+    "tipVelocity": [817.623, 23.0058, 913.473],
+    "tool": false,
+    "touchDistance": 0.333333,
+    "touchZone": "hovering"
+  },
+  {
+    "direction": [-0.10998, -0.514582, -0.850359],
+    "handId": 86,
+    "id": 77,
+    "length": 59.9339,
+    "stabilizedTipPosition": [13.0968, 286.227, 55.1256],
+    "timeVisible": 0.607058,
+    "tipPosition": [13.0968, 286.227, 55.1256],
+    "tipVelocity": [673.533, 164.542, 619.108],
+    "tool": false,
+    "touchDistance": 1,
+    "touchZone": "none"
+  },
+  {
+    "direction": [-0.0516575, -0.280825, -0.958368],
+    "handId": 86,
+    "id": 36,
+    "length": 59.3558,
+    "stabilizedTipPosition": [103.614, 261.652, 56.5842],
+    "timeVisible": 0.503,
+    "tipPosition": [103.614, 261.652, 56.5842],
+    "tipVelocity": [476.055, -216.908, 994.099],
+    "tool": false,
+    "touchDistance": 1,
+    "touchZone": "none"
+  }
+  ],
+  "r": [[0.484427, 0.751268, 0.44825], [-0.855129, 0.514767, 0.0613927], [-0.184622, -0.413052, 0.891798]],
+  "s": -2.04795,
+  "t": [52.5439, 367.54, -113.615],
+  "timestamp": 145897480586
+}
